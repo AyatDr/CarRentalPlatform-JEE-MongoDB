@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+
+  <servlet>
+    <description></description>
+    <display-name>LoginManager</display-name>
+    <servlet-name>LoginManager</servlet-name>
+    <servlet-class>com.octest.servlet.LoginManager</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LoginManager</servlet-name>
+    <url-pattern>/LoginManager</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <display-name>LocationVoiture</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>Reservations</display-name>
+    <servlet-name>Reservations</servlet-name>
+    <servlet-class>com.octest.servlet.Reservations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reservations</servlet-name>
+    <url-pattern>/Reservations</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.octest.servlet.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+  
+  
+    <description></description>
+    <display-name>Profile</display-name>
+    <servlet-name>Profile</servlet-name>
+    <servlet-class>com.octest.servlet.Profile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Profile</servlet-name>
+    <url-pattern>/Profile</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginAdmin</display-name>
+    <servlet-name>LoginAdmin</servlet-name>
+    <servlet-class>com.octest.servlet.LoginAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAdmin</servlet-name>
+    <url-pattern>/LoginAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>HomeAdmin</display-name>
+    <servlet-name>HomeAdmin</servlet-name>
+    <servlet-class>com.octest.servlet.HomeAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeAdmin</servlet-name>
+    <url-pattern>/HomeAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>LogoutAdmin</display-name>
+    <servlet-name>LogoutAdmin</servlet-name>
+    <servlet-class>com.octest.servlet.LogoutAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutAdmin</servlet-name>
+    <url-pattern>/LogoutAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <servlet-name>Manager</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Manager</servlet-name>
+    <url-pattern>/Manager</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <servlet-name>addManager2</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addManager2</servlet-name>
+    <url-pattern>/Manager2/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <description></description>
+    <display-name>Delete</display-name>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/Manager/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <description></description>
+    <display-name>Delete2</display-name>
+    <servlet-name>Delete2</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete2</servlet-name>
+    <url-pattern>/Manager2/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>ManagerForm</display-name>
+    <servlet-name>ManagerForm</servlet-name>
+    <servlet-class>com.octest.servlet.FormServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerForm</servlet-name>
+    <url-pattern>/Manager/Form</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>updateManager</display-name>
+    <servlet-name>updateManager</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateManager</servlet-name>
+    <url-pattern> /Manager/UpdateManager</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>updateManager2</display-name>
+    <servlet-name>updateManager2</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateManager2</servlet-name>
+    <url-pattern> /Manager2/UpdateManager</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <display-name>updateM</display-name>
+    <servlet-name>updateM</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateM</servlet-name>
+    <url-pattern>/Manager/Update</url-pattern>
+  </servlet-mapping>
+   <servlet>
+   
+   
+    <display-name>updateM2</display-name>
+    <servlet-name>updateM2</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateM2</servlet-name>
+    <url-pattern>/Manager2/Update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <servlet-name>Client</servlet-name>
+    <servlet-class>com.octest.servlet.ClientServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Client</servlet-name>
+    <url-pattern>/Client</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <servlet-name>addClient</servlet-name>
+    <servlet-class>com.octest.servlet.ClientServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addClient</servlet-name>
+    <url-pattern>/Client/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <description></description>
+    <display-name>DeleteCl</display-name>
+    <servlet-name>DeleteCl</servlet-name>
+    <servlet-class>com.octest.servlet.ClientServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteCl</servlet-name>
+    <url-pattern>/Client/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>ClientForm</display-name>
+    <servlet-name>ClientForm</servlet-name>
+    <servlet-class>com.octest.servlet.FormClServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientForm</servlet-name>
+    <url-pattern>/Client/Form</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <display-name>updateClient</display-name>
+    <servlet-name>updateClient</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateClServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateClient</servlet-name>
+    <url-pattern> /Client/UpdateClient</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>updateCl</display-name>
+    <servlet-name>updateCl</servlet-name>
+    <servlet-class>com.octest.servlet.ClientServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateCl</servlet-name>
+    <url-pattern>/Client/Update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>updateV</display-name>
+    <servlet-name>updateV</servlet-name>
+    <servlet-class>com.octest.servlet.VoitureServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateV</servlet-name>
+    <url-pattern>/Voiture/Update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <description></description>
+    <display-name>VoitureServ</display-name>
+    <servlet-name>VoitureServ</servlet-name>
+    <servlet-class>com.octest.servlet.VoitureServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VoitureServ</servlet-name>
+    <url-pattern>/VoitureServ</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <display-name>updateVoiture</display-name>
+    <servlet-name>updateVoiture</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateVServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateVoiture</servlet-name>
+    <url-pattern> /Voiture/UpdateVoiture</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>VoitureForm</display-name>
+    <servlet-name>VoitureForm</servlet-name>
+    <servlet-class>com.octest.servlet.FormVServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VoitureForm</servlet-name>
+    <url-pattern>/Voiture/Form</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+    <description></description>
+    <display-name>DeleteV</display-name>
+    <servlet-name>DeleteV</servlet-name>
+    <servlet-class>com.octest.servlet.VoitureServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteV</servlet-name>
+    <url-pattern>/Voiture/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>addVoiture</servlet-name>
+    <servlet-class>com.octest.servlet.VoitureServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addVoiture</servlet-name>
+    <url-pattern>/Voiture/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <description></description>
+    <servlet-name>Voiture</servlet-name>
+    <servlet-class>com.octest.servlet.VoitureServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Voiture</servlet-name>
+    <url-pattern>/Voiture</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteReservationServlet</display-name>
+    <servlet-name>DeleteReservationServlet</servlet-name>
+    <servlet-class>com.octest.servlet.DeleteReservationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteReservationServlet</servlet-name>
+    <url-pattern>/DeleteReservationServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>AjouterReservation</display-name>
+    <servlet-name>AjouterReservation</servlet-name>
+    <servlet-class>com.octest.servlet.AjouterReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjouterReservation</servlet-name>
+    <url-pattern>/AjouterReservation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>ChangerStatutServlet</display-name>
+    <servlet-name>ChangerStatutServlet</servlet-name>
+    <servlet-class>com.octest.servlet.ChangerStatutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangerStatutServlet</servlet-name>
+    <url-pattern>/ChangerStatutServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Filtrer</display-name>
+    <servlet-name>Filtrer</servlet-name>
+    <servlet-class>com.octest.servlet.Filtrer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Filtrer</servlet-name>
+    <url-pattern>/Filtrer</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Reserver</display-name>
+    <servlet-name>Reserver</servlet-name>
+    <servlet-class>com.octest.servlet.Reserver</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Reserver</servlet-name>
+    <url-pattern>/Reserver</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>InsererReservation</display-name>
+    <servlet-name>InsererReservation</servlet-name>
+    <servlet-class>com.octest.servlet.InsererReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsererReservation</servlet-name>
+    <url-pattern>/InsererReservation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Dashboard</display-name>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>com.octest.servlet.Dashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/Dashboard</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>ListReservation</display-name>
+    <servlet-name>ListReservation</servlet-name>
+    <servlet-class>com.octest.servlet.ListReservation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListReservation</servlet-name>
+    <url-pattern>/ListReservation</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>com.octest.servlet.AdminServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <servlet-name>addAdmin</servlet-name>
+    <servlet-class>com.octest.servlet.AdminServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAdmin</servlet-name>
+    <url-pattern>/Admin/insert</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>DeleteAd</display-name>
+    <servlet-name>DeleteAd</servlet-name>
+    <servlet-class>com.octest.servlet.AdminServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAd</servlet-name>
+    <url-pattern>/Admin/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>AdminForm</display-name>
+    <servlet-name>AdminForm</servlet-name>
+    <servlet-class>com.octest.servlet.FormAdServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminForm</servlet-name>
+    <url-pattern>/Admin/Form</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>updateAdmin</display-name>
+    <servlet-name>updateAdmin</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateAdServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateAdmin</servlet-name>
+    <url-pattern> /Admin/UpdateAdmin</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <display-name>updateAd</display-name>
+    <servlet-name>updateAd</servlet-name>
+    <servlet-class>com.octest.servlet.AdminServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateAd</servlet-name>
+    <url-pattern>/Admin/Update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UpdateAdServ</display-name>
+    <servlet-name>UpdateAdServ</servlet-name>
+    <servlet-class>com.octest.servlet.UpdateAdServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAdServ</servlet-name>
+    <url-pattern>/UpdateAdServ</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Manager2</display-name>
+    <servlet-name>Manager2</servlet-name>
+    <servlet-class>com.octest.servlet.ManagerServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Manager2</servlet-name>
+    <url-pattern>/Manager2</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Manager2/Form</display-name>
+    <servlet-name>Manager2/Form</servlet-name>
+    <servlet-class>com.octest.servlet.FormServ2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Manager2/Form</servlet-name>
+    <url-pattern>/Manager2/Form</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
